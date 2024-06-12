@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Inventory</title>
+</head>
+<body>
+    <h1>Add Inventory</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ product_form.as_p }}
+        {{ image_form.as_p }}
+        <input type="submit" value="Add Inventory">
+    </form>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Add Inventory</title>
+</head>
+<body>
+    <h1>Add Your Inventory</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="product_name">Product Name:</label><br>
+        <input type="text" id="product_name" name="product_name" required><br>
+        <label for="product_description">Product Description:</label><br>
+        <textarea id="product_description" name="product_description"></textarea><br>
+        <label for="original_price">Original Price:</label><br>
+        <input type="number" id="original_price" name="original_price" step="0.01"><br>
+        <label for="discounted_price">Discounted Price:</label><br>
+        <input type="number" id="discounted_price" name="discounted_price" step="0.01"><br>
+        <label for="product_image">Product Image:</label><br>
+        <input type="file" id="product_image" name="product_image"><br>
+        <input type="submit" value="Add Product">
+
+    </form>
+
+</body>
+</html> -->

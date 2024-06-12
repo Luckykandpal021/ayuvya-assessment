@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Stock Details</title>
+</head>
+<body>
+    <h1> Product ID:- {{product_id}}    </h1>
+<ul>{% for stocks in stocks_details%}
+
+<h3>Stock Name:- {{ stocks.product.product_name }}</h3>
+<p>Stock Quantity:- {{stocks.quantity}}</p>
+{%endfor%}
+</ul>
+</body>
+</html>

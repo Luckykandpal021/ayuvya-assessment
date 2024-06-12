@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Order  Details</title>
+</head>
+<body>
+<ul>{% for order in orders%}
+
+<h3>Order Name:- {{ order.product.product_name }}</h3>
+<p>Order Quantity:- {{order.quantity}}</p>
+<p>Order Source:- {{order.order_source}}</p>
+
+<p>Order Destination:- {{order.order_date}}</p>
+{%endfor%}
+</ul>
+</body>
+</html>

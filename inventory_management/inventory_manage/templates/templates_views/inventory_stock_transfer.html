@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Stock Transfer Details</title>
+</head>
+<body>
+<ul>{% for stocks in stock_transfers%}
+
+<h3>Stock Name:- {{ stocks.product.product_name }}</h3>
+<p>Stock Quantity:- {{stocks.quantity}}</p>
+<p>Stock Source:- {{stocks.source}}</p>
+
+<p>Stock Destination:- {{stocks.destination}}</p>
+<p>Stock Transfer Date:- {{stocks.transfer_date}}</p>
+{%endfor%}
+</ul>
+</body>
+</html>
