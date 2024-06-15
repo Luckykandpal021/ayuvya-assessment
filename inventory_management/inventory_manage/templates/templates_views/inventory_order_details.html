@@ -11,6 +11,9 @@
 <p>Order Source:- {{order.order_source}}</p>
 
 <p>Order Destination:- {{order.order_date}}</p>
+
+<a href="{% url 'edit_order_details' order.id %}"><button>Edit</button></a>
+<a href="{% url 'delete_order_details' order.id %}"><button>Delete</button></a>
 {%endfor%}
 </ul>
 </body>
